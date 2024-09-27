@@ -32,7 +32,7 @@ body {
 #message-board-body {
     background-color: antiquewhite;
     grid-area: 2/2/4/5;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
 
 
 }
@@ -40,4 +40,5 @@ body {
 #footer {
     background-color: whitesmoke;
     grid-area: 4/1/5/5;
+    text-align: center;
 }
