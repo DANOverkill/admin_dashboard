@@ -123,8 +123,16 @@ ul {
     grid-template-rows: 1fr 1fr;
 }
 
+.your-projects-container {
+    grid-area: 1/1/3/3 ;
+}
+
 .announcements-body {
-    grid-area:1/1/3/4 ;
+    grid-area: 1/3/2/4;
+}
+
+.trending-container {
+    grid-area: 2/3/3/4;
 }
 
 /* footer styling */
