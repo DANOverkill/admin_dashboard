@@ -35,7 +35,7 @@ body {
 }
 
 .side-bar {
-    background-color: rgb(163, 211, 211);
+    background-color: rgb(138, 138, 248);
     grid-area: 1/1/4/2;
 }
 
@@ -94,25 +94,30 @@ ul {
 /* SideBar Styling: only contains the styling for the items inside the sidebar*/
 
 .sidebar-container {
+    background-color: rgb(138, 138, 248);
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 0.5fr 2fr 1fr 1fr;
     gap: 2px;
 }
 
+.sidebar-container * {
+    color: white;
+}
+
 .sidebar-logo {
     grid-area: 1/1/2/2;
-    background-color: rgb(114, 168, 168);
+    /* background-color: rgb(114, 168, 168); */
 }
 
 .sidebar-home {
     grid-area: 2/1/3/2;
-    background-color: rgb(114, 168, 168);
+    /* background-color: rgb(114, 168, 168); */
 }
 
 .sidebar-settings {
     grid-area: 3/1/4/2;
-    background-color: rgb(114, 168, 168);
+    /* background-color: rgb(114, 168, 168); */
 }
 
 /* message board styling */
