@@ -14,9 +14,13 @@ body {
     display: grid;
     background-color: rgb(211, 211, 211);
     grid-template-rows: 0.5fr 1fr 1fr 0.1fr;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 0.75fr repeat(3, 1fr);
     gap: 3px;
 
+}
+
+h5 {
+    /* size: 50px; */
 }
 
 /* main structure style: only contains the styling for the foundation of the site's style*/
@@ -107,7 +111,20 @@ ul {
 
 .sidebar-logo {
     grid-area: 1/1/2/2;
-    /* background-color: rgb(114, 168, 168); */
+    display: flex;
+    align-items: center;
+    height: 25px;
+    width: auto;
+}
+
+.sidebar-logo-text {
+    font-size: 20px;
+}
+
+.sidebar-logo-img {
+    filter: invert(1);
+    height: 25px;
+    width: auto;
 }
 
 .sidebar-home {
