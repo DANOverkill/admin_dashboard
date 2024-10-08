@@ -49,7 +49,7 @@ h5 {
     text-align: center;
 }
 ul {
-    /* list-style-type: none; */
+    list-style-type: none;
 }
 
 /* header styling: only contains the styling for the header */
@@ -79,6 +79,8 @@ ul {
     margin-top: 50px;
 }
 
+
+
 .header-button {
     flex: 1;                   /* All items take up equal space */
     padding: 10px;
@@ -101,7 +103,7 @@ ul {
     background-color: rgb(138, 138, 248);
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 0.5fr 2fr 1fr 1fr;
+    grid-template-rows: 0.25fr 1.5fr 1fr 1fr;
     gap: 2px;
 }
 
@@ -124,13 +126,9 @@ ul {
 }
 
 .sidebar-logo-img {
-    /* filter: invert(1); */
+    filter: invert(1);
     height: 25px;
     width: auto;
-}
-
-.filter {
-    filter: invert(1);
 }
 
 .sidebar-home {
@@ -148,13 +146,29 @@ ul {
     gap: 10px;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
+    padding-left: 15px;
 }
 
-.a1 {
-    list-style-image: ;
+.setting-list {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    padding-left: 15px;
 }
 
+.side-bar-button {
+    display: flex;
+    align-items: center;   
+}
 
+.sidebar-icon {
+    filter: invert(1);
+    height: 17px;
+    width: auto;
+    padding-bottom: 3px;
+    padding-right: 5px;
+}
 
 
 /* message board styling */
