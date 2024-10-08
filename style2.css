@@ -1,0 +1,153 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Sidebar on the left, content on the right */
+    grid-template-rows: auto 1fr auto; /* Header at the top, content in the middle, footer at the bottom */
+    gap: 20px;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Search-bar-container {
+    flex-grow: 1;
+    margin-right: 20px;
+  }
+  
+  .greeting-card {
+    display: flex;
+    align-items: center;
+  }
+  
+  .greeting-avatar {
+    margin-right: 10px;
+  }
+  
+  .greeting-message {
+    margin-right: 5px;
+  }
+  
+  .header-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-info .notification-bell,
+  .header-info .header-avatar {
+    margin-right: 10px;
+  }
+  
+  .header-buttons-container {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header-buttons-container li {
+    margin-left: 15px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .side-bar {
+    grid-row: 2 / 3;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }
+  
+  .sidebar-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .sidebar-logo img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .sidebar-home,
+  .sidebar-settings {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar-home ul,
+  .sidebar-settings ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar-home ul li,
+  .sidebar-settings ul li {
+    padding: 10px 0;
+    cursor: pointer;
+    color: #bbb;
+  }
+  
+  .sidebar-home ul li:hover,
+  .sidebar-settings ul li:hover {
+    color: #fff;
+  }
+  
+  .message-board-body {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .your-projects-container,
+  .announcements-body,
+  .trending-container {
+    background-color: #f8f8f8;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-card,
+  .Announcement-card,
+  .trending-user {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .trending-user {
+    display: flex;
+    align-items: center;
+  }
+  
+  .trending-avatar {
+    margin-right: 10px;
+  }
+  
+  .footer {
+    grid-column: 1 / -1;
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+  }
+  
