@@ -73,6 +73,7 @@ ul {
 }
 
 .header-buttons-container {
+    color: white;
     grid-area: 2/2/3/3;
     display: flex;
     flex-wrap: nowrap;
@@ -84,7 +85,7 @@ ul {
 .header-button {
     flex: 1;                   /* All items take up equal space */
     padding: 10px;
-    background-color: lightblue;
+    background-color: rgb(97, 97, 199);
     text-align: center;        /* Center text horizontally */
     display: flex;             /* Set flex on the item itself */
     justify-content: center;   /* Center text horizontally (again) */
@@ -100,7 +101,7 @@ ul {
 /* SideBar Styling: only contains the styling for the items inside the sidebar*/
 
 .sidebar-container {
-    background-color: rgb(138, 138, 248);
+    background-color: rgb(97, 97, 199);
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 0.25fr 1.5fr 1fr 1fr;
