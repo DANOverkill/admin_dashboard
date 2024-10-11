@@ -11,9 +11,10 @@ html, body {
 }
 
 body {
+    font-size: 75%;
     display: grid;
     background-color: rgb(211, 211, 211);
-    grid-template-rows: 0.5fr 1fr 1fr 0.1fr;
+    grid-template-rows: 0.25fr 1fr 1fr 0.1fr;
     grid-template-columns: 0.75fr repeat(3, 1fr);
     gap: 3px;
 
@@ -60,8 +61,9 @@ ul {
     grid-template-rows: 1fr 1fr;
 }
 
-.sidebar-container {
+.search-bar-container {
     grid-area: 1/1/2/2;
+    display: flex;
 }
 
 .greeting-card {
@@ -80,7 +82,11 @@ ul {
     margin-top: 50px;
 }
 
-
+.header-icon {
+    height: 17px;
+    width: auto;
+    padding-right: 5px;   
+}
 
 .header-button {
     flex: 1;                   /* All items take up equal space */
