@@ -64,6 +64,17 @@ ul {
 .search-bar-container {
     grid-area: 1/1/2/2;
     display: flex;
+    width: 500px;
+}
+
+#search-box {
+    justify-content: center;
+    width: 80%;
+    border-radius: 15px;
+}
+
+.header-icon {
+    padding-top: 10px;
 }
 
 .greeting-card {
