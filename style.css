@@ -13,9 +13,9 @@ html, body {
 body {
     font-size: 75%;
     display: grid;
-    background-color: whitesmoke;
+    background-color: rgb(203, 218, 223);
     grid-template-rows: 0.75fr 2fr 2fr 0.1fr;
-    grid-template-columns: 0.75fr repeat(3, 1fr);
+    grid-template-columns: 0.55fr repeat(3, 1fr);
     gap: 3px;
     overflow: hidden;
 }
@@ -236,7 +236,7 @@ ul {
 
 .message-board-body {
     display: grid;
-    grid-template-columns: repeat(2, 1fr) 0.85fr;
+    grid-template-columns: repeat(2, 1fr) 0.70fr;
     grid-template-rows: 1fr 1fr;
     gap: 15px;
     padding-top: 10px;
@@ -302,6 +302,7 @@ ul {
     height: 17px;
     gap: 7px;
     justify-content: center;
+    padding-bottom: 10px;
 }
 
 .project-interaction-icons {
