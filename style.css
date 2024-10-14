@@ -261,7 +261,7 @@ ul {
 .yourProjects h5 {
     display: flex;
     justify-content: left;
-    font-size: 125%;
+    font-size: 105%;
     padding: 5px;
 }
 
@@ -326,7 +326,7 @@ ul {
 .Announcements h5 {
     display: flex;
     justify-content: left;
-    font-size: 125%;
+    font-size: 105%;
     padding: 3px;
 }
 
@@ -364,6 +364,26 @@ ul {
     height:175px;
 }
 
+.trending-user {
+    display: flex;
+    flex-wrap: nowrap;
+    height: inherit;
+}
+
+.trending-avatar {
+    transform: scale(0.5);
+}
+
+.trending-text-container {
+    margin-top: 1.15em;
+    font-size: 85%;
+    height: fit-content;
+}
+
+.trending-userTag {
+    font-weight: bold;
+    margin-top: 1.05em;
+}
 .user-display-container {
     background-color:  rgb(252, 244, 235);
     grid-area: 2/1/3/2;
@@ -381,8 +401,10 @@ ul {
 .trending-title h5 {
     display: flex;
     justify-content: left;
-    font-size: 125%;
+    font-size: 105%;
     padding: 3px;
 }
+
+
 
 /* footer styling */
