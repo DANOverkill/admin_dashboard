@@ -360,24 +360,26 @@ ul {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.20fr 2fr;
-    gap: 10px;
+    gap: 5px;
     height:175px;
 }
 
 .trending-user {
     display: flex;
     flex-wrap: nowrap;
-    height: inherit;
+    justify-content: left;
+    height: 40px;
+
 }
 
 .trending-avatar {
     transform: scale(0.5);
+    margin-bottom: 15px;
 }
 
 .trending-text-container {
-    margin-top: 1.15em;
+    /* margin-top: 1.15em; */
     font-size: 85%;
-    height: fit-content;
 }
 
 .trending-userTag {
