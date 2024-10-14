@@ -17,7 +17,7 @@ body {
     grid-template-rows: 0.75fr 2fr 2fr 0.1fr;
     grid-template-columns: 0.75fr repeat(3, 1fr);
     gap: 3px;
-
+    overflow: hidden;
 }
 
 h5, h4, p {
@@ -30,14 +30,14 @@ h5, h4, p {
 .header {
     background-color: whitesmoke;
     grid-area: 1/2/2/5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding drop shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .message-board-body {
-    background-color: antiquewhite;
+    background-color: rgb(203, 218, 223);
     grid-area: 2/2/4/5;
     /*border-radius: 10px;*/
-
-
 }
 
 .side-bar {
@@ -61,8 +61,8 @@ ul {
     grid-template-columns: 2.5fr 1.5fr;
     grid-template-rows: 1fr 1fr;
     height: 125px;
-    margin-top: 7px;
-    margin-left: 7px;
+    padding-top: 7px;
+    padding-left: 7px;
 }
 
 .search-bar-container {
@@ -238,10 +238,74 @@ ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    padding-top: 10px;
+    padding-left: 10px;
+
 }
 
 .your-projects-container {
-    grid-area: 1/1/3/3 ;
+    grid-area: 1/1/3/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.20fr repeat(3, 1fr);
+    gap: 10px;
+    height:425px;
+}
+
+.yourProjects {
+    grid-area: 1/1/2/3;
+}
+
+.yourProjects h5 {
+    display: flex;
+    justify-content: left;
+    font-size: 125%;
+    padding: 5px;
+}
+
+.project-card {
+    background-color: rgb(252, 244, 235);
+    border-radius: 15px;
+    padding-left: 10px;
+    border-left-style: solid;
+    border-width: 5px;
+    border-color: rgb(252, 185, 99);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding drop shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 1.5fr;
+    grid-template-rows: 0.15fr 1fr 0.25fr;
+}
+.project-card h4 {
+    grid-area: 1/1/2/4;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: fit-content;
+    width: fit-content;
+
+}
+
+.project-card p {
+    grid-area: 2/1/3/4;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.icon-container {
+    grid-area: 3/3/4/4;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 17px;
+    gap: 7px;
+    justify-content: center;
+}
+
+.project-interaction-icons {
+    height: 17px;
+    width: 17px;
 }
 
 .announcements-body {
